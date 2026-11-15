@@ -6,7 +6,7 @@ st.title("👔 StyleSense AI Stylist")
 st.caption("Your personal grooming & outfit advisor")
 
 # (तुमची Gemini API Key इथे टाका / Paste your API key here)
-API_KEY = "YOUR_API_KEY_HERE"
+API_KEY = "API_KEY = "AQ.Ab8RN6JRujTwkWKC5pGtYao0EFD4l5Bg2BpRp7qhtEPacqieUA"
 client = genai.Client(api_key=API_KEY)
 
 if "messages" not in st.session_state:
@@ -31,7 +31,7 @@ if user_prompt := st.chat_input("Ask about outfits, hairstyle, or budget..."):
 
     with st.chat_message("assistant"):
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model=model="gemini-1.5-flash"
             contents=f"{stylist_instruction}\n\nUser asks: {user_prompt}"
         )
         st.write(response.text)
