@@ -6,7 +6,7 @@ st.title("👔 StyleSense AI Stylist")
 st.caption("Your personal grooming & outfit advisor")
 
 # (तुमची Gemini API Key इथे टाका / Paste your API key here)
-API_KEY = "API_KEY = "AQ.Ab8RN6JRujTwkWKC5pGtYao0EFD4l5Bg2BpRp7qhtEPacqieUA"
+API_KEY = "AQ.Ab8RN6JRujTwkWKC5pGtYao0EFD4l5Bg2BpRp7qhtEPacqieUA"
 client = genai.Client(api_key=API_KEY)
 
 if "messages" not in st.session_state:
